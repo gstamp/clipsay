@@ -1,0 +1,14 @@
+[package]
+name = "clipsay"
+version = "0.1.0"
+authors = ["Glen Stampoultzis <gstamp@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clipboard-master = "3.1.1"
+clipboard = "0.5.0"
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+rodio = "0.14.0"
+regex = "1"
