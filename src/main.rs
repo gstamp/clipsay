@@ -24,6 +24,7 @@ fn speak(clip: &str, english_mode: bool) -> Result<()> {
     let client = Client::new();
     let token = request_token(&client)?;
     let res = request_tts(clip, token, client, english_mode)?;
+
     let cursor = response_to_cursor(res)?;
     play_sound(cursor)?;
     Ok(())
